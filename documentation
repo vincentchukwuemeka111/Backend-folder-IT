@@ -1,0 +1,32 @@
+//for cart model
+cart: [
+      {
+        productId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Product"
+        },
+        quantity: {
+          type: Number,
+          default: 1
+        }
+      }
+    ]
+
+
+ //FOR ADMIN
+//  status: {
+//       type: String,
+//       default: "Active"
+//     }     
+
+
+
+
+//for payment
+// // Check user
+    // const user = await User.findById(userId);
+    // if (!user) return res.status(404).json({ message: "User not found" });
+
+    // // Check bike
+    // const bike = await Bike.findById(bikeId);
+    // if (!bike) return res.status(404).json({ message: "Bike not found" });
